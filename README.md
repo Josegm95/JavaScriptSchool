@@ -3,49 +3,45 @@
 This repository was created to save the challenges of Jobsity javascript
 bootcamp. Every weak is focused on a WEB technology like HTML, CSS, Javascript
 or React and these have challenges that must be completed.
-
 ___
-
 ## CHALENGES
 
-1. Challenge 01.
+1. First Challenge  
 Issues management and GIT project.
 
-2. Challenge 02.
+2. Second Challenge  
 RESTful APIs and HTTP requests.
 
-3. Challenge 03.
+3. Third Challenge  
 Layout and styling.
 
-4. Challenge 04.
+4. Fourth Challenge  
 Create a piano player.
 
-5. Challenge 05.
+5. Fifth Challenge  
 Homepage for the final project.
 
-6. Challenge 06.
+6. Sixth Challenge  
 Backend endpoints.
 
-7. Challenge 07.
+7. Seventh Challenge  
 Migrate your prototype into a real application using React.
 
-8. Challenge 08.
+8. Eighth Challenge  
 Secure your application.
 
-9. Challenge 09.
+9. Ninth Challenge  
 REDUX integration.
 
-10. Challenge 10.
+10. Tenth Challenge  
 Real-time integration.
 
-11. Challenge 11.
+11. Eleventh Challenge  
 Multimedia challenge.
 
-12. Challenge 12.
+12. Twelfth Challenge  
 Dynamic forms.
-
 ___
-
 ## Contact Information
 - Name: Jose Gomez
 - Email: jose.fgm1995@gmail.com
