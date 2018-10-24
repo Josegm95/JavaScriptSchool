@@ -6,40 +6,40 @@ or React and these have challenges that must be completed.
 ___
 ## CHALENGES
 
-1. First Challenge  
+1. **First Challenge**  
 Issues management and GIT project.
 
-2. Second Challenge  
+2. **Second Challenge**  
 RESTful APIs and HTTP requests.
 
-3. Third Challenge  
+3. **Third Challenge**  
 Layout and styling.
 
-4. Fourth Challenge  
+4. **Fourth Challenge**  
 Create a piano player.
 
-5. Fifth Challenge  
+5. **Fifth Challenge**  
 Homepage for the final project.
 
-6. Sixth Challenge  
+6. **Sixth Challenge**  
 Backend endpoints.
 
-7. Seventh Challenge  
+7. **Seventh Challenge**  
 Migrate your prototype into a real application using React.
 
-8. Eighth Challenge  
+8. **Eighth Challenge**  
 Secure your application.
 
-9. Ninth Challenge  
+9. **Ninth Challenge**  
 REDUX integration.
 
-10. Tenth Challenge  
+10. **Tenth Challenge**  
 Real-time integration.
 
-11. Eleventh Challenge  
+11. **Eleventh Challenge**  
 Multimedia challenge.
 
-12. Twelfth Challenge  
+12. **Twelfth Challenge**  
 Dynamic forms.
 ___
 ## Contact Information
