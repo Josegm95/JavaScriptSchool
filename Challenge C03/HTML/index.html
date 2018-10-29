@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jobsity Bookshelf</title>
   <link rel="icon" type="image/png" href="../IMG/favicon.png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
@@ -10,7 +11,13 @@
 </head>
 
 <body>
-  <header class="header-container">
+  <div class="responsive-header">
+    <i id="menu" class="fas fa-bars"></i>
+    <span>Bookshelf</span>
+    <img src="../IMG/logo.png" alt="Jobsity logo">
+    <i id="user" class="fas fa-address-card"></i>
+  </div>
+  <header id="header-container" class="header-container">
     <div class="logo-header">
       <div class="">
         <img src="../IMG/logo.png" alt="Jobsity logo">
@@ -36,7 +43,7 @@
     </div>
   </header>
   <div class="body-container">
-    <nav class="nav-container">
+    <nav id="nav-container" class="nav-container">
       <div class="navbar">
         <span>MAIN</span>
         <a href="#"><i class="fas fa-globe"></i>Quito</a>
@@ -443,6 +450,8 @@
       </ol>
     </aside>
   </div>
+
+  <script type="text/javascript" src="../Scripts/script.js"></script>
 </body>
 
 </html>

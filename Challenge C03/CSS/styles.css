@@ -29,17 +29,27 @@
 }
 
 body {
-  overflow: hidden;
   margin: 0;
   padding: 0;
 }
 
 .header-container {
   display: flex;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: #fcf8f3;
+}
+
+.responsive-header {
+  position: fixed;
+  width: 100%;
+  display: none;
+  background-color: #fcf8f3;
 }
 
 .logo-header {
-  flex-basis: 14.6%;
+  width: 14.6%;
   height: 80px;
   display: flex;
   align-items: center;
@@ -51,7 +61,7 @@ body {
 }
 
 .midle-header {
-  flex-basis: 70.8%;
+  width: 70.8%;
   height: 80px;
   display: flex;
   align-items: center;
@@ -82,6 +92,7 @@ body {
 }
 
 .search input {
+  background-color: transparent;
   border: 0;
 }
 
@@ -100,7 +111,7 @@ body {
 }
 
 .user-header {
-  flex-basis: 14.6%;
+  width: 14.6%;
   height: 80px;
   display: flex;
   align-items: center;
@@ -125,7 +136,11 @@ body {
 }
 
 .nav-container {
-  flex-basis: 14.6%;
+  position: fixed;
+  width: 14.6%;
+  height: 100%;
+  top: 0;
+  margin-top: 80px;
   background: #231f20;
 }
 
@@ -155,12 +170,19 @@ body {
   display:
 }
 
+.navbar a:hover {
+  color: #fcf8f3;
+}
+
 .navbar i {
   margin-right: 20px;
 }
 
-main {
-  flex-basis: 70.8%;
+.main-container {
+  width: 70.8%;
+  margin-top: 80px;
+  margin-right: 14.6%;
+  margin-left: 14.6%;
 }
 
 .content-bar {
@@ -211,12 +233,9 @@ main {
 
 .content article {
   width: 176px;
-  margin-right: 15px;
+  margin-right: 1.29%;
   margin-bottom: 47px;
-  margin-left: 15px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  margin-left: 1.29%;
 }
 
 .content figure {
@@ -235,6 +254,9 @@ main {
   font-size: 15px;
   color: #383838;
   cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .content span {
@@ -250,7 +272,11 @@ main {
 }
 
 .aside-container {
-  flex-basis: 14.6%;
+  position: fixed;
+  height: 100%;
+  width: 14.6%;
+  margin-top: 80px;
+  right: 0;
   background: #231f20;
   padding-top: 37px;
 }
@@ -264,6 +290,7 @@ main {
   opacity: 0.7;
   font-weight: 100;
   display: block;
+  cursor: default;
 }
 
 .aside-container ol {
@@ -273,14 +300,140 @@ main {
 
 .aside-container li {
   margin-top: 27px;
-  margin-right: 20px;
-  margin-left: 43px;
+  margin-right: 30px;
+  margin-left: 34px;
   color: #fcf8f3;
   font-family: CondLight;
   font-size: 12px;
   opacity: 0.4;
-  /*white-space: nowrap;
+  cursor: pointer;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  list-style-position: inside;*/
+  list-style-position: inside;
+}
+
+.aside-container li:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1292px) {
+  .logo-header, .user-header, .nav-container, .aside-container {
+    width: 18%;
+  }
+
+  .midle-header {
+    width: 64%;
+  }
+
+  .main-container {
+    width: 100%;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+
+  .content {
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  .content article {
+    width: 176px;
+    margin-right: 2%;
+    margin-bottom: 47px;
+    margin-left: 2%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .responsive-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .responsive-header span {
+    font-family: Medium;
+    font-size: 24px;
+    cursor: default;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+
+  #user {
+    margin-right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  .header-container {
+    top: 80px;
+    left: -101%;
+    flex-direction: column;
+    border: 1px solid;
+  }
+
+  .logo-header, .midle-header h1 {
+    display: none;
+  }
+
+  .midle-header {
+    width: 100%;
+    order: 1;
+  }
+
+  .search {
+    margin: auto;
+  }
+
+  .user-header {
+    width: 100%;
+    border-bottom: 1px solid;
+  }
+
+  .nav-container {
+    width: 25%;
+  }
+
+  .main-container {
+    margin-right: 0;
+    margin-left: 25%;
+  }
+
+  .aside-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .responsive-header {
+    height: 81px;
+    border: 1px solid;
+  }
+
+  #menu {
+    display: block;
+    margin-left: 20px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  .nav-container{
+    left: -100%;
+    width: 70%
+  }
+
+  .main-container {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .responsive-header img{
+    display: none;
+  }
 }
