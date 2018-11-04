@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: brown;
+}
+
+main {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  top: 10%;
+  background-color: chocolate;
+}
+
+.piano {
+  position: absolute;
+  width: 70%;
+  height: 60%;
+  top: 35%;
+  left: 15%;
+  background-color:gray;
+  display: flex;
+  justify-content: space-around;
+  border: 10px solid;
+  border-radius: 18px;
+}
+
+.white {
+  align-self: center;
+  width: 13.7%;
+  height: 98%;
+  border: 2px solid;
+  border-radius: 7px;
+  background-color: white;
+}
+
+.white:active {
+  background-color: rgb(200, 200, 200);
+}
+
+.x {
+  margin-left: -2.6%;
+}
+
+.black {
+  position: relative;
+  width: 5%;
+  height: 60%;
+  top: 1px;
+  margin-left: -2.6%;
+  border: 2px solid;
+  border-radius: 5px;
+  background-color: black;
+}
+
+.black:active {
+  background-color: rgb(40, 40, 40);
+}
