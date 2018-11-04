@@ -2,11 +2,25 @@ var keys = document.querySelectorAll('div.key');
 
 for (let i = 0; i < keys.length; i++) {
   keys[i].addEventListener('click', playClick);
-  keys[i].addEventListener('touch', playClick);
+  keys[i].addEventListener('ontouchstart', playClick);
+  keys[i].addEventListener('ontouchend', playClick);
 }
 
 function playClick(key) {
-  audio = key.srcElement.querySelector('audio');
+  switch (key.type) {
+    case 'click':
+      audio = key.srcElement.querySelector('audio');
+      break;
+    case 'ontouchstart':
+      console.log(key);
+      break;
+    case 'ontouchend':
+      console.log(key);
+      break;
+    default:
+      break;
+  }
+
   audio.currentTime = 0;
   audio.play();
 }
