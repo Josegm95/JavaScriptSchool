@@ -43,7 +43,7 @@ main {
   background-color: white;
 }
 
-.white:active {
+.white:active, .white.act{
   background-color: rgb(200, 200, 200);
 }
 
@@ -62,6 +62,6 @@ main {
   background-color: black;
 }
 
-.black:active {
+.black:active, .black.act{
   background-color: rgb(40, 40, 40);
 }
