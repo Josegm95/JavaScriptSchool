@@ -1,26 +1,24 @@
+document.getElementById('list-icon').addEventListener('click', showList);
+function showList() {
+  container = document.getElementById('song-list');
+  piano = document.getElementById('piano');
+  if (container.className === 'song-list') {
+    container.className += '-active';
+    piano.style.zIndex = -1;
+  } else {
+    container.className = 'song-list';
+    piano.style.zIndex = 1;
+  }
+}
+
 var keys = document.querySelectorAll('div.key');
 
 for (let i = 0; i < keys.length; i++) {
   keys[i].addEventListener('click', playClick);
-  keys[i].addEventListener('ontouchstart', playClick);
-  keys[i].addEventListener('ontouchend', playClick);
 }
 
 function playClick(key) {
-  switch (key.type) {
-    case 'click':
-      audio = key.srcElement.querySelector('audio');
-      break;
-    case 'ontouchstart':
-      console.log(key);
-      break;
-    case 'ontouchend':
-      console.log(key);
-      break;
-    default:
-      break;
-  }
-
+  audio = key.srcElement.querySelector('audio');
   audio.currentTime = 0;
   audio.play();
 }
