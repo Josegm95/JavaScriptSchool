@@ -1,7 +1,7 @@
-document.getElementById('list-icon').addEventListener('click', showList);
+/* eslint-env browser */
 function showList() {
-  container = document.getElementById('song-list');
-  piano = document.getElementById('piano');
+  const container = document.getElementById('song-list');
+  const piano = document.getElementById('piano');
   if (container.className === 'song-list') {
     container.className += '-active';
     piano.style.zIndex = -1;
@@ -10,34 +10,35 @@ function showList() {
     piano.style.zIndex = 1;
   }
 }
+document.getElementById('list-icon').addEventListener('click', showList);
 
-var keys = document.querySelectorAll('div.key');
-
-for (let i = 0; i < keys.length; i++) {
-  keys[i].addEventListener('click', playClick);
-}
+const keys = document.querySelectorAll('div.key');
 
 function playClick(key) {
-  audio = key.srcElement.querySelector('audio');
+  const audio = key.srcElement.querySelector('audio');
   audio.currentTime = 0;
   audio.play();
 }
 
-window.addEventListener('keydown', playKey);
-window.addEventListener('keyup', playKey);
+for (let i = 0; i < keys.length; i += 1) {
+  keys[i].addEventListener('click', playClick);
+}
 
 function playKey(key) {
   try {
-    var audio = document.getElementById(key.keyCode);
-    var div = audio.parentElement;
+    const audio = document.getElementById(key.keyCode);
+    const div = audio.parentElement;
     if (key.type === 'keydown') {
       audio.currentTime = 0;
       audio.play();
-      div.className += " act";
+      div.className += ' act';
     } else {
       div.classList.remove('act');
     }
-  } catch {
+  } catch (e) {
     console.log('Error: The keyboard pressed is invalid, use olny a, w, s, e, d, j, i, k, o, l, p, ñ.');
   }
 }
+
+window.addEventListener('keydown', playKey);
+window.addEventListener('keyup', playKey);
