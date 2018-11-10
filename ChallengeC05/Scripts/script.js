@@ -2,7 +2,7 @@ const m = document.getElementById('midle-header');
 const u = document.getElementById('user-header');
 const n = document.getElementById('nav-container');
 
-document.getElementById('user').addEventListener('click', () => {
+document.getElementById('user-button').addEventListener('click', () => {
   if (m.className === 'midle-header') {
     n.className = 'nav-container';
     m.className += ' show-header';
@@ -13,7 +13,7 @@ document.getElementById('user').addEventListener('click', () => {
   }
 });
 
-document.getElementById('menu').addEventListener('click', () => {
+document.getElementById('menu-button').addEventListener('click', () => {
   if (n.className === 'nav-container') {
     m.className = 'midle-header';
     u.className = 'user-header';

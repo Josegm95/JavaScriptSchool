@@ -1,0 +1,53 @@
+.aside-container {
+  @include laptops {
+    width: 20%;
+  }
+
+  @include mini-laptops {
+    display: none;
+  }
+
+  background: $main-black;
+  height: 92%;
+  padding-top: 37px;
+  position: fixed;
+  right: 0;
+  top: 80px;
+  width: 14.6%;
+
+  span {
+    color: $main-white;
+    cursor: default;
+    display: block;
+    font-family: CondBold;
+    font-size: 13px;
+    font-weight: 100;
+    margin-left: 34px;
+    margin-right: 20px;
+    opacity: .7;
+  }
+
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    color: $main-white;
+    cursor: pointer;
+    font-family: CondLight;
+    font-size: 12px;
+    list-style-position: inside;
+    margin-left: 34px;
+    margin-right: 30px;
+    margin-top: 27px;
+    opacity: .4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    :hover {
+      opacity: 1;
+    }
+  }
+}

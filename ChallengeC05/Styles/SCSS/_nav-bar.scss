@@ -1,0 +1,61 @@
+.nav-container {
+  @include laptops {
+    width: 20%;
+  }
+
+  @include mini-laptops {
+    width: 25%;
+  }
+
+  @include tablets {
+    display: none;
+    width: 40%;
+  }
+
+  @include phones {
+    width: 65%;
+  }
+
+  background: $main-black;
+  height: 92%;
+  overflow: scroll;
+  position: fixed;
+  width: 14.6%;
+}
+
+.show-nav {
+  display: block;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    color: $white;
+    cursor: default;
+    font-family: CondBold;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 15px;
+    margin-top: 36px;
+  }
+
+  a {
+    color: $main-blue;
+    font-family: CondRegular;
+    font-size: 14px;
+    margin-bottom: 22px;
+    margin-left: 40px;
+    margin-right: 20px;
+    text-decoration: none;
+
+    :hover {
+      color: $main-white;
+    }
+
+    i {
+      margin-right: 20px;
+    }
+  }
+}
