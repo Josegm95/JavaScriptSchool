@@ -13,12 +13,15 @@ or React and these have challenges that must be completed.
 
 2. **Third Challenge**  
    Layout and styling.
+   [Link to the challenge page](./Challenge02)
 
 3. **Fourth Challenge**  
    Create a piano player.
+   [Link to the challenge page](./Challenge03)
 
 4. **Fifth Challenge**  
    Homepage with javascript interactions.
+   [Link to the challenge page](./Challenge04)
 
 ---
 
