@@ -104,7 +104,7 @@ body {
 }
 
 .user-header::before {
-  content: "";
+  content: '';
   width: 3px;
   height: 50px;
   border-left: 1px solid #979797;
@@ -316,7 +316,10 @@ body {
 }
 
 @media screen and (max-width: 1292px) {
-  .logo-header, .user-header, .nav-container, .aside-container {
+  .logo-header,
+  .user-header,
+  .nav-container,
+  .aside-container {
     width: 18%;
   }
 
@@ -375,7 +378,8 @@ body {
     border: 1px solid;
   }
 
-  .logo-header, .midle-header h1 {
+  .logo-header,
+  .midle-header h1 {
     display: none;
   }
 
@@ -420,9 +424,9 @@ body {
     cursor: pointer;
   }
 
-  .nav-container{
+  .nav-container {
     left: -100%;
-    width: 70%
+    width: 70%;
   }
 
   .main-container {
@@ -431,7 +435,7 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  .responsive-header img{
+  .responsive-header img {
     display: none;
   }
 }
